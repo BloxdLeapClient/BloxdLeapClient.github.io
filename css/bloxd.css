@@ -1,0 +1,12 @@
+iframe.game {
+    width: 89.99em;
+    height: 50.74em;
+    display: block;
+    border: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: 0;
+    left: 0.01em;
+    top: 0.01em;
+    position: absolute;
+}
