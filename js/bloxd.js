@@ -11,7 +11,7 @@ function iframeLoaded() {
     // Function to modify iframe content (called initially and on an interval)
     function modifyIframe() {
         // Change Page Title
-        const titleElement = iframeDoc.querySelector('.Title.FullyFancyText');
+        const titleElement = iframeDoc.querySelector('div.Title.FullyFancyText');
         if (titleElement) {
             titleElement.innerHTML = 'Leap Client';
             titleElement.style.fontSize = '3.3em';

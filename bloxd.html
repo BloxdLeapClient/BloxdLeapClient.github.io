@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Leap Client For Bloxd.io</title>
-    <meta name="description" content="Enhance your Bloxd.io experience with Leap Client! 100% FREE, offering improved performance, features, and more. Play now!">
+    <meta name="description" content="Enhance your Bloxd.io experience with Leap Client!">
     <meta name="application-name" content="Bloxd.io Client">
 
     <link rel="icon" href="img/favicon/favicon.ico">
@@ -13,9 +13,6 @@
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" sizes="192x192" href="img/favicon/android-chrome-192x192.png">
     <link rel="icon" sizes="512x512" href="img/favicon/android-chrome-512x512.png">
-
-
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://bloxd.io/; script-src 'self' 'unsafe-inline' https://bloxd.io/; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://bloxd.io/; frame-src https://bloxd.io/; connect-src 'self' https://bloxd.io/; font-src 'self' https://bloxd.io/; media-src 'self' https://bloxd.io/; object-src 'none';">
 
     <style>
         html, body {
@@ -29,21 +26,20 @@
             width: 100%;
             height: 100%;
             border: none; /* Or border: 0; */
-            display: block; /* Prevents a small gap at the bottom in some cases */
+            display: block; /* Prevents a small gap at the bottom */
         }
     </style>
-</head>
+    <script src="js/bloxd.js" defer></script> </head>
+
 <body>
     <iframe id="game-iframe" src="https://bloxd.io/" 
             allow="autoplay; fullscreen"
             webkitallowfullscreen="true"
             mozallowfullscreen="true" 
-            msallowfullscreen="true" 
-            allowfullscreen="true"
+            msallowfullscreen="true"
+            allowfullscreen="true" 
             sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
-            style="border: 0px; min-width: 100%; min-height: 100%;">
+            onload="iframeLoaded()">
     </iframe>
-
-    <script src="js/bloxd.js" ></script> </head>
 </body>
 </html>
