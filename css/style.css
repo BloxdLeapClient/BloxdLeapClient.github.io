@@ -27,7 +27,7 @@ body {
 }
 
 button {
-    width: 14em; /* Adjusted */
+    width: 13em; /* Adjusted */
     height: 4em; /* Adjusted */
     background-color: black;
     color: lime;
@@ -39,5 +39,26 @@ button {
 }
 
 button:hover {
-    transform: scale(1.2); /* Adjusted */
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 4em;
+        margin-bottom: 20px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1.5em;
+    }
 }
